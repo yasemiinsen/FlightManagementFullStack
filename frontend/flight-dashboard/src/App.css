@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ✅ Ekstra Responsive İyileştirme */
+@media (max-width: 600px) {
+  .MuiTableContainer-root {
+    overflow-x: auto !important;
+  }
+
+  .MuiTableCell-root {
+    font-size: 12px !important;
+    padding: 6px !important;
+  }
+
+  .MuiTextField-root,
+  .MuiFormControl-root {
+    min-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .MuiTableContainer-root {
+    overflow-x: auto !important;
+  }
+
+  body,
+  .page-container,
+  .page-wrapper {
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+  }
+}
+/* App.css veya global.css içine ekle */
+@media (max-width: 900px) {
+  .MuiTextField-root,
+  .MuiFormControl-root,
+  .MuiButton-root {
+    flex: 1 1 100% !important;
+    min-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .MuiBox-root {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+}

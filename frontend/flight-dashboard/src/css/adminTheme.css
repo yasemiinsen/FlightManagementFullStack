@@ -1,0 +1,239 @@
+/* Flight Management Admin - Modern Blue/Yellow Theme */
+
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+    min-height: 100vh;
+}
+
+html,
+body {
+    background: #fff !important;
+}
+
+/* SIDEBAR */
+.MuiDrawer-paper {
+    background: #1b3b82;
+    color: #fff;
+    box-shadow: 2px 0px 16px rgba(27, 59, 130, 0.12);
+    border-right: 4px solid #f7c61b;
+}
+
+.MuiListItemButton-root {
+    color: #fff;
+    border-radius: 8px;
+    margin: 8px 12px;
+    transition: background 0.2s, color 0.2s;
+    font-family: 'Roboto', sans-serif;
+}
+
+.MuiListItemButton-root:hover,
+.Mui-selected {
+    background: #1b3b82 !important;
+    color: #f7c61b !important;
+    box-shadow: 0 2px 8px rgba(27, 59, 130, 0.2);
+}
+
+.MuiListItemIcon-root {
+    min-width: 40px;
+    color: #f7c61b !important;
+}
+
+/* APPBAR */
+.MuiAppBar-root {
+    background: #1b3b82 !important;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(27, 59, 130, 0.15);
+    border-bottom: 4px solid #f7c61b;
+    font-family: 'Roboto', sans-serif;
+}
+
+.MuiTableHead-root {
+    background: #1b3b82;
+}
+
+/* PAGE WRAPPER */
+.page-wrapper {
+    background: #fff;
+    border-radius: 18px;
+    padding: 32px;
+    box-shadow: 0px 4px 24px rgba(27, 59, 130, 0.10);
+    margin: 24px 0;
+}
+
+/* HEADINGS */
+h4,
+h5,
+h6,
+.page-title {
+    color: #1b3b82;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.page-title {
+    font-size: 32px;
+    margin-bottom: 28px;
+    text-shadow: 0 2px 8px #f7c61b33;
+}
+
+/* FILTER BAR */
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
+    background: #f7c61b22;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 2px 8px #1b3b8222;
+}
+
+/* BUTTONS */
+.MuiButton-contained {
+    background: #1b3b82 !important;
+    color: #fff !important;
+    text-transform: none;
+    padding: 10px 28px !important;
+    font-weight: 600;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #1b3b8233;
+    font-family: 'Roboto', sans-serif !important;
+    transition: background 0.2s;
+}
+
+.MuiButton-contained:hover {
+    background: #16275a !important;
+    /* Daha koyu lacivert */
+    color: #fff !important;
+}
+
+.MuiButton-outlined {
+    border-color: #1b3b82 !important;
+    color: #1b3b82 !important;
+    background: #fff !important;
+    font-weight: 600;
+    border-radius: 8px;
+    text-transform: none;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.MuiButton-outlined:hover {
+    background: #ffe066 !important;
+    color: #1b3b82 !important;
+}
+
+/* TABLES */
+.MuiTableContainer-root {
+    box-shadow: 0px 2px 16px #1b3b8233;
+    border-radius: 14px;
+    background: #fff;
+}
+
+.MuiTableHead-root {
+    background: linear-gradient(90deg, #1b3b82 60%, #f7c61b 100%);
+}
+
+.MuiTableCell-head {
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.MuiTableRow-root:hover {
+    background: #f7c61b33;
+}
+
+/* FORM ELEMENTS */
+.MuiTextField-root,
+.MuiFormControl-root {
+    min-width: 180px;
+    background: #fff;
+    border-radius: 6px;
+}
+
+.MuiInputLabel-root {
+    color: #1b3b82 !important;
+}
+
+.MuiOutlinedInput-root {
+    border-radius: 6px !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+    border-color: #1b3b8233 !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #f7c61b !important;
+}
+
+/* ACTION LINKS */
+.action-link {
+    color: #f7c61b;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.action-link:hover {
+    color: #1b3b82;
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .MuiDrawer-paper {
+        width: 60px !important;
+        overflow-x: hidden;
+        transition: width 0.3s;
+    }
+
+    .MuiListItemText-root {
+        display: none !important;
+    }
+
+    main,
+    .page-wrapper,
+    .page-container {
+        margin-left: 60px !important;
+        padding: 8px !important;
+        width: calc(100vw - 60px) !important;
+        min-width: 0 !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .filter-bar {
+        flex-direction: column !important;
+        gap: 8px !important;
+        padding: 8px !important;
+    }
+
+    .MuiTextField-root,
+    .MuiFormControl-root {
+        min-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .MuiTableContainer-root {
+        overflow-x: auto !important;
+    }
+
+    .MuiTableCell-root {
+        font-size: 12px !important;
+        padding: 6px !important;
+    }
+
+    body,
+    .page-container,
+    .page-wrapper {
+        padding: 0 !important;
+        margin: 0 !important;
+        border-radius: 0 !important;
+    }
+}
